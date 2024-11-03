@@ -3,16 +3,16 @@ function guessNumber(){
     let guess;
 
     while (guess !== numberResult) { //om gissning inte är resultatet av random
-        guess = prompt('guess a number between 1 and 10;');
+            guess = prompt('guess a number between 1 and 10;');
 
-    if (guess === numberResult) {
-        alert ('right number');
-    } else if (guess < numberResult) {
-        alert ('too low');
-    } else if (guess > numberResult) {
-        alert('too high');
-    } else {
-        alert('enter a valid number');
+        if (guess === numberResult) {
+            alert ('Well done! Right number!');
+        } else if (guess < numberResult) {
+            alert ('Too low, try again!');
+        } else if (guess > numberResult) {
+            alert('Too high, try again!');
+        } else {
+            alert('enter a valid number');
+        }
     }
-}
 }
